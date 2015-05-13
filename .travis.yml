@@ -1,7 +1,14 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 env:
-  - NODE_ENV=travis
+- NODE_ENV=travis
 services:
-  - mongodb
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: 3pXpuSoYriYqVYcTmm9TanM4VyycWS/JJSvgsATkHjPQCjzYassuo41As0JSZ5W26Kd4cUtvDmxeFkPNSfLKXWolrZO4z27GXQZ+0Fg7IyFWJBSvHtfTNeN7+MYKGHQy7NDwIBwWhQIUzPW3sSo05C6LU9f9GN2s4tk9dEhQQIytEo6f9bq00f1y3I1S6rnKFarazySZsMrnEzmCJFvLhAJe3zrS7QPwBEGtsOnwrmD9WJKczW0iWHsFbmpXjWE9+xD4zvzO8xk/2gnwYG2gapiL9yA68qOvu+E60Sbjewx4PUS1d23PStuH224BVK4SAk/7ZLiB+mEaclavEFbLu5h00nfSluJ55KZn+8w5xw5Crb33w8eYmDLyJrI7E5blhYrwaxIiSsZvBTkrYORWXSGwVIX3RhnyhG7zcsIKKt/FaCFrQQJBn83lU6b+j1L6bQ3nvLlwjneD02kdTfKjiOKNYlMCwepBKUiRFrU04xwkwlxazCrD9IkTPXkt/l1gDcUkLebWIDFW4OOgXJid3fJcjMlPTvei8S0iNLssAGqwn3DMPsEXC4hJHQgbpHA6RcjXAV/6TD7WzVQgftXVcZIthPbCc0UGf7yIDJQzEr97l2NrdsKmEYMXh9PN2Cli4WHa8asuDxwMO/xU/mc660XlBSM+JjA29iJicsGrN/s=
+  app: glacial-ravine-2157
+  on:
+    repo: micksi/testMean
